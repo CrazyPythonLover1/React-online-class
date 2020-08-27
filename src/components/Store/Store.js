@@ -7,15 +7,17 @@ import fakeData from '../../fakeData/course.js'
 const Store = () => {
     const [courses,setCourses]= useState(fakeData)
     return (
-        <div>
-            <div className="course-container">
+        <div style={{margin:"2rem"}}>
+            <h1> The world's largest selection of courses </h1>
             <h1 className="text-info"> Courses: {courses.length} </h1>
-            {
-                courses.map(course=><Course course={course} key={course.id} ></Course>)
-            }
+            <div className="course-container row">
+                {
+                    courses.map(course=><Course course={course} key={course.id} ></Course>)
+                }
             </div>
+            
             <div className="cart">
-                This is Cart
+                <h3> Cart: </h3>
             </div>
         </div>
     );

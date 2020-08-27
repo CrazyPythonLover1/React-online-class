@@ -1,7 +1,7 @@
 
 .single-course{
-    width: 17rem;
-    margin: 1rem;
+    width: 16rem;
+    margin: 1rem .5rem 1rem .2rem;
     padding: 0.7rem;
     border: 1px solid lightgrey;
     border-radius:5px;
