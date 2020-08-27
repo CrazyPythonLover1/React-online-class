@@ -11,7 +11,7 @@ const Store = () => {
             <div className="course-container">
             <h1 className="text-info"> Courses: {courses.length} </h1>
             {
-                courses.map(course=><Course course={course} key={course.id}></Course>)
+                courses.map(course=><Course course={course} key={course.id} ></Course>)
             }
             </div>
             <div className="cart">

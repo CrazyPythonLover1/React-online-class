@@ -1,0 +1,30 @@
+
+.single-course{
+    width: 17rem;
+    margin: 1rem;
+    padding: 0.7rem;
+    border: 1px solid lightgrey;
+    border-radius:5px;
+
+}
+.course-img{
+    display: flex;
+    justify-content: center;
+    padding:0 0 .6rem 0;
+    
+}
+.course-img img{
+    border-radius: 5px;
+}
+
+.course-info h4{
+    color: #17a2b8;
+    font-weight: 500;
+}
+button{
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius:5px;
+    padding:4px;
+}
