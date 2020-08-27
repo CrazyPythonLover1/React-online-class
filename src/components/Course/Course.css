@@ -1,10 +1,10 @@
 
 .single-course{
     width: 16rem;
-    margin: 1rem .5rem 1rem .2rem;
+    margin: 1rem .5rem 1rem .5rem;
     padding: 0.7rem;
-    background-color:white;
-    border: 1px solid lightgrey;
+    background-color:#f2f7ff;;
+    border: 1px solid #f2f7ff;
     border-radius:5px;
     box-shadow: none;
 
@@ -25,4 +25,47 @@
 .course-info h4{
     color: #17a2b8;
     font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .single-course{
+        width: 14rem;
+        margin: 1rem .5rem 1rem .5rem;
+        padding: 0.7rem;
+        background-color:#f2f7ff;;
+        border: 1px solid #f2f7ff;
+    }
+    .course-img img{
+        width:13rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .single-course{
+        width: 22rem;
+        margin: 1rem 2rem ;
+        padding: 0.7rem;
+        background-color:#f2f7ff;;
+        border: 1px solid #f2f7ff;
+    }
+    .course-img img{
+        width:21rem;
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+    .single-course{
+        width: 14rem;
+        margin: 1rem .5rem 1rem .5rem;
+        padding: 0.7rem;
+        background-color:#f2f7ff;;
+        border: 1px solid #f2f7ff;
+    }
+    .course-img img{
+        width:13rem;
+    }
+    
 }

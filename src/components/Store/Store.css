@@ -1,13 +1,59 @@
 .course-container{
-    
+    width:85%;
 }
-.cart{
+.cart-container{
     position: absolute;
     top:5rem;
-    right: 0;
+    right: 10px;
     float:right;
-    width: 11rem;
+    width: 15%;
     min-height:7rem;
     text-align:center;
-    background-color:#ffffff;
+    margin-right: .5rem;
+    background-color: #f2f7ff;
+    border-radius: 10px;
+
+}
+
+@media only screen and (max-width: 992px) {
+    .cart-container{
+        width: 32%;
+        right: 0;
+    }
+  }
+
+@media only screen and (max-width: 830px) {
+    .cart-container{
+        width: 28%;
+        right: 0;
+    }
+  }
+
+@media only screen and (max-width: 760px) {
+    .cart-container{
+        width: 36%;
+        right: 0;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .course-container{
+        width:100%;
+    }
+.cart-container{
+    width:100%;
+    position: relative;
+    left: 1rem;
+    right: 1rem;
+    margin:1rem;
+    }
+}
+@media only screen and (max-width:300px){
+    .cart-container{
+        width:100%;
+        position: relative;
+        left: 1rem;
+        right: 1rem;
+        margin:1rem;
+        }
 }

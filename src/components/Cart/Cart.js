@@ -7,7 +7,7 @@ const Cart = (props) => {
     const courseStyle = {
         fontSize:"1rem",
         display:"block",
-        padding:".4rem .4rem 2rem .4rem"
+        padding:".4rem .4rem 1rem .4rem"
     }
     
 
@@ -23,17 +23,16 @@ const Cart = (props) => {
     const totalPrice = cart.reduce((total, course) => total + course.price,0)
 
     return (
-    <div className="">
+    <div className=" cart mt-3">
         
-        <h3> Cart: {cart.length} </h3>
+        <h3 className="text-info"> Cart: {cart.length} </h3>
         {
         cart.map(course=><p style={courseStyle}> 
-                            <strong style={{float:"left"}}>Course:</strong> 
-                            {course.title}
-                            <b style={{display:"block",float:"left",color:"tomato"}}>Price: ${course.price}</b> 
+                            <strong style={{float:"left"}}>{course.title}</strong> 
+                            <b style={{display:"block",color:"tomato"}}>Price: ${course.price}</b> 
                         </p> )
         }
-        <h6 className="mt-4"> Total Price: ${totalPrice.toFixed(2)} </h6>
+        <h6 className="mt-4 mb-4"> Total Price: ${totalPrice.toFixed(2)} </h6>
     </div>
     );
 };

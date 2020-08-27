@@ -4,7 +4,7 @@ import React from 'react';
 const Navbar = (props) => {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light " style={{backgroundColor: '#e3f2fd'}}>
+            <nav className="navbar  navbar-expand-md navbar-expand-sm navbar-light " style={{backgroundColor: '#e3f2fd'}}>
                 <a className="navbar-brand" href="#"> <img src={props.logo} style={{width:"6rem"}} alt=""/> </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
