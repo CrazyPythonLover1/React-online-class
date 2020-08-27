@@ -9,6 +9,18 @@ const Cart = (props) => {
         display:"block",
         padding:".4rem .4rem 2rem .4rem"
     }
+    
+
+    // Compute the Total Price of the Selected Course 
+    // let totalPrice = 0;
+    // for(let i =0; i<cart.length; i++) {
+    //     const element = cart[i];
+    //     const newPrice = element.price;
+    //     totalPrice += newPrice;
+    // }
+
+    // Another way Compute the Total Price of the Selected Course 
+    const totalPrice = cart.reduce((total, course) => total + course.price,0)
 
     return (
     <div className="">
@@ -18,9 +30,10 @@ const Cart = (props) => {
         cart.map(course=><p style={courseStyle}> 
                             <strong style={{float:"left"}}>Course:</strong> 
                             {course.title}
-                            <b style={{display:"block",float:"left"}}>Price: ${course.price}</b> 
+                            <b style={{display:"block",float:"left",color:"tomato"}}>Price: ${course.price}</b> 
                         </p> )
         }
+        <h6 className="mt-4"> Total Price: ${totalPrice.toFixed(2)} </h6>
     </div>
     );
 };
