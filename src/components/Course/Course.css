@@ -3,9 +3,14 @@
     width: 16rem;
     margin: 1rem .5rem 1rem .2rem;
     padding: 0.7rem;
+    background-color:white;
     border: 1px solid lightgrey;
     border-radius:5px;
+    box-shadow: none;
 
+}
+.single-course:hover{
+    box-shadow: 5px 5px 15px #ddd;
 }
 .course-img{
     display: flex;
@@ -20,11 +25,4 @@
 .course-info h4{
     color: #17a2b8;
     font-weight: 500;
-}
-button{
-    background-color: #17a2b8;
-    color: white;
-    border: none;
-    border-radius:5px;
-    padding:4px;
 }

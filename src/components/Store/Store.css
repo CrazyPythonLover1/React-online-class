@@ -1,10 +1,13 @@
 .course-container{
-   width: 90%;
     
 }
 .cart{
-    width: 10%;
     position: absolute;
-    top: 6rem;
-    right: 1rem;
+    top:5rem;
+    right: 0;
+    float:right;
+    width: 11rem;
+    min-height:7rem;
+    text-align:center;
+    background-color:#ffffff;
 }

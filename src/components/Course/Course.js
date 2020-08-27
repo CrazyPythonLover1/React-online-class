@@ -11,11 +11,11 @@ const Course = (props) => {
                         <img src={image} alt=" No Image"/>
                     </div>
                     <div className="course-info">
-                        <h4> {title} </h4>
+                        <h5> {title} </h5>
                         <p> Created by {author} </p>
                         <h5> Rating: {rating} </h5>
                         <h5> Price: ${price} </h5>
-                        <button> Add to Cart</button>
+                        <button onClick={()=>props.handleAddCourse(props.course)} className="btn btn-info"> Enroll Now</button>
                     </div>
                 </div>
             </div>
